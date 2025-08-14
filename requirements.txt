@@ -1,3 +1,7 @@
+openpyxl
+python-dotenv
+sqlalchemy
+pandas
 pytest==8.4.1
 requests==2.32.3
 selenium==4.23.1
