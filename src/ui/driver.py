@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+import pytest
 
 def build_driver():
     """
@@ -11,7 +12,9 @@ def build_driver():
     - Tamaño de ventana fijo para evitar diferencias de layout.
     """
     opts = Options()
-    if os.environ.get("HEADLESS", "").lower() in ("1", "true", "yes"):
+    is_headless = os.getenv("HEADLESS","").strip().lower()
+    if is_headless in ("1", "true", "yes"):
+        print("Headless activated")
         opts.add_argument("--headless=new")
     opts.add_argument("--window-size=1280,1600")
 
