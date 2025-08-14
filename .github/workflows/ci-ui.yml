@@ -1,27 +1,31 @@
-name: CI - UI tests
+name: CI - UI & API tests
 
 on:
   push:
     paths:
       - "tests/ui/**"
       - "src/ui/**"
-      - ".github/workflows/ci-ui.yml"
+      - "tests/api/**"
+      - "src/api/**"
+      - ".github/workflows/ci.yml"
       - "requirements.txt"
       - "pytest.ini"
   pull_request:
     paths:
       - "tests/ui/**"
       - "src/ui/**"
-      - ".github/workflows/ci-ui.yml"
+      - "tests/api/**"
+      - "src/api/**"
+      - ".github/workflows/ci.yml"
       - "requirements.txt"
       - "pytest.ini"
 
 jobs:
+  # ---------- UI TESTS ----------
   ui-tests:
     runs-on: ubuntu-latest
-
     env:
-      HEADLESS: "true"          # run headless mode
+      HEADLESS: "true"
       PYTHONDONTWRITEBYTECODE: "1"
 
     steps:
@@ -52,16 +56,37 @@ jobs:
           pip install -r requirements.txt
 
       - name: Ejecutar tests de UI
-        run: |
-          pytest -q tests/ui
+        run: pytest -q tests/ui
 
-      - name: Publicar reportes (opcional si generas .html / logs)
-        if: always()
-        uses: actions/upload-artifact@v4
+
+  # ---------- API TESTS ----------
+  api-tests:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          name: ui-test-artifacts
-          path: |
-            .pytest_cache
-            reports/**
-            logs/**
-          if-no-files-found: ignore
+          python-version: "3.12"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Ejecutar tests de API
+        run: pytest -q tests/api
+
