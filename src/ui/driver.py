@@ -17,6 +17,8 @@ def build_driver():
         print("Headless activated")
         opts.add_argument("--headless=new")
     opts.add_argument("--window-size=1280,1600")
-
+    opts.add_argument("--no-sandbox")
+    opts.add_argument("--disable-dev-shm-usage")
+    opts.add_argument("--disable-gpu")
     service = Service(ChromeDriverManager().install())
     return webdriver.Chrome(service=service, options=opts)
