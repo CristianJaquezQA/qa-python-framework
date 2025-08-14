@@ -11,3 +11,9 @@ def facebook_search():
     driver.get("https://www.facebook.com/")
     assert "Facebook" in driver.title
     driver.quit()
+
+def wikipedia_search():
+    driver = build_driver()
+    driver.get("https://www.wikipedia.org/")
+    assert "Wikipedia" in driver.title
+    driver.quit()
