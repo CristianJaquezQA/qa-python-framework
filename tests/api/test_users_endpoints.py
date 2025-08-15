@@ -6,12 +6,11 @@ BASE = "https://jsonplaceholder.typicode.com"  # cámbialo por tu API
 TIMEOUT = 10
 
 def test_users_get_by_id_ok():
+
     r = requests.get(f"{BASE}/users/1", timeout=TIMEOUT)
-    print(r.text)
     assert r.status_code == 200
     assert r.headers.get("Content-Type", "").startswith("application/json")
     data = r.json()
-    print(json.dumps(data, indent=4, sort_keys=True))
     assert data["id"] == 1
     assert "name" in data and "email" in data
 
@@ -19,7 +18,6 @@ def test_users_list_filters_by_username():
     r = requests.get(f"{BASE}/users", params={"username": "Bret"}, timeout=TIMEOUT)
     assert r.status_code == 200
     data = r.json()
-    print(json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False))
     assert isinstance(data, list)
     assert any(u.get("username") == "Bret" for u in data)
 

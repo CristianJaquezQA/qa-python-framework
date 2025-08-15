@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67795974-d592-44cc-8333-f62e827b322e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/http-methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/etl/tiny-etl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/api/test_users_endpoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/~$Empleados.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api/test_users_endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api/test_users_endpoints.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755196278111</updated>
-      <workItem from="1755196279996" duration="12791000" />
+      <workItem from="1755196279996" duration="13936000" />
     </task>
     <servers />
   </component>
@@ -181,6 +178,6 @@
     <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_for_tests_api_test_users_test_get_user_1.coverage" NAME="pytest for tests.api.test_users.test_get_user_1 Coverage Results" MODIFIED="1755196681739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_for_tests_api_test_users_test_users_parametrizados.coverage" NAME="pytest for tests.api.test_users.test_users_parametrizados Coverage Results" MODIFIED="1755213519834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_in_test_web_form_py.coverage" NAME="pytest in test_web_form.py Coverage Results" MODIFIED="1755225147348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_in_test_users_endpoints_py.coverage" NAME="pytest in test_users_endpoints.py Coverage Results" MODIFIED="1755228545364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_in_test_users_endpoints_py.coverage" NAME="pytest in test_users_endpoints.py Coverage Results" MODIFIED="1755229784952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
