@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67795974-d592-44cc-8333-f62e827b322e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/etl/ETL_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/etl/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci-ui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci-ui.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/http-methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/etl/tiny-etl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/api/test_users_endpoints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/~$Empleados.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +56,13 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.pytest for tests.api.test_users.test_get_user_1.executor": "Run",
     "Python tests.pytest for tests.api.test_users.test_users_parametrizados.executor": "Run",
+    "Python tests.pytest in http-methods.py.executor": "Run",
+    "Python tests.pytest in test_users.py.executor": "Run",
+    "Python tests.pytest in test_users_endpoints.py.executor": "Run",
+    "Python tests.pytest in test_web_form.py.executor": "Run",
     "Python.ETL_demo.executor": "Run",
+    "Python.client.executor": "Run",
+    "Python.tiny-etl.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -70,15 +73,39 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver.localdb"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\qa-python-miniframework\src\api" />
       <recent name="C:\qa-python-miniframework\src\" />
       <recent name="C:\qa-python-miniframework\src" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="pytest for calling-methods.test_put_update_post" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="qa-python-miniframework" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;calling-methods.test_put_update_post&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for tests.api.test_users.test_get_user_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="qa-python-miniframework" />
       <option name="ENV_FILES" value="" />
@@ -117,6 +144,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for calling-methods.test_put_update_post" />
         <item itemvalue="Python tests.pytest for tests.api.test_users.test_users_parametrizados" />
         <item itemvalue="Python tests.pytest for tests.api.test_users.test_get_user_1" />
       </list>
@@ -137,7 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755196278111</updated>
-      <workItem from="1755196279996" duration="7738000" />
+      <workItem from="1755196279996" duration="12791000" />
     </task>
     <servers />
   </component>
@@ -145,8 +173,14 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/qa_python_miniframework$client.coverage" NAME="client Coverage Results" MODIFIED="1755225071563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/api" />
+    <SUITE FILE_PATH="coverage/qa_python_miniframework$tiny_etl.coverage" NAME="tiny-etl Coverage Results" MODIFIED="1755225789661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/etl" />
+    <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_in_test_users_py.coverage" NAME="pytest in test_users.py Coverage Results" MODIFIED="1755225121076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_in_http_methods_py.coverage" NAME="pytest in http-methods.py Coverage Results" MODIFIED="1755227147678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/qa_python_miniframework$ETL_demo.coverage" NAME="ETL_demo Coverage Results" MODIFIED="1755213912395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/etl" />
     <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_for_tests_api_test_users_test_get_user_1.coverage" NAME="pytest for tests.api.test_users.test_get_user_1 Coverage Results" MODIFIED="1755196681739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_for_tests_api_test_users_test_users_parametrizados.coverage" NAME="pytest for tests.api.test_users.test_users_parametrizados Coverage Results" MODIFIED="1755213519834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_in_test_web_form_py.coverage" NAME="pytest in test_web_form.py Coverage Results" MODIFIED="1755225147348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_in_test_users_endpoints_py.coverage" NAME="pytest in test_users_endpoints.py Coverage Results" MODIFIED="1755228545364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

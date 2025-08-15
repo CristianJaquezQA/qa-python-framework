@@ -1,3 +1,4 @@
+pyodbc
 openpyxl
 python-dotenv
 sqlalchemy
