@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="67795974-d592-44cc-8333-f62e827b322e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/api/test_users_endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api/test_users_endpoints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/etl/tiny-etl.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etl/tiny-etl.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,22 +24,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "CristianJaquezQA"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;CristianJaquezQA&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/CristianJaquezQA/qa-python-miniframework.git",
-    "accountId": "f49892f1-4c00-4410-8127-10e4ae5ae951"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CristianJaquezQA/qa-python-miniframework.git&quot;,
+    &quot;accountId&quot;: &quot;f49892f1-4c00-4410-8127-10e4ae5ae951&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="31I0SGX9O2FUpnTioxdUpkH2uvJ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,36 +48,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.pytest for tests.api.test_users.test_get_user_1.executor": "Run",
-    "Python tests.pytest for tests.api.test_users.test_users_parametrizados.executor": "Run",
-    "Python tests.pytest in http-methods.py.executor": "Run",
-    "Python tests.pytest in test_users.py.executor": "Run",
-    "Python tests.pytest in test_users_endpoints.py.executor": "Run",
-    "Python tests.pytest in test_web_form.py.executor": "Run",
-    "Python.ETL_demo.executor": "Run",
-    "Python.client.executor": "Run",
-    "Python.tiny-etl.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "new-features",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.pytest for tests.api.test_users.test_get_user_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for tests.api.test_users.test_users_parametrizados.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in http-methods.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_users.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_users_endpoints.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_web_form.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ETL_demo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.client.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tiny-etl.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;new-features&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver.localdb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\qa-python-miniframework\src\api" />
@@ -84,7 +85,7 @@
       <recent name="C:\qa-python-miniframework\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.pytest for calling-methods.test_put_update_post">
     <configuration name="pytest for calling-methods.test_put_update_post" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="qa-python-miniframework" />
       <option name="ENV_FILES" value="" />
@@ -162,7 +163,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755196278111</updated>
-      <workItem from="1755196279996" duration="13936000" />
+      <workItem from="1755196279996" duration="19377000" />
+      <workItem from="1756754377424" duration="456000" />
     </task>
     <servers />
   </component>
@@ -178,6 +180,6 @@
     <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_for_tests_api_test_users_test_get_user_1.coverage" NAME="pytest for tests.api.test_users.test_get_user_1 Coverage Results" MODIFIED="1755196681739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_for_tests_api_test_users_test_users_parametrizados.coverage" NAME="pytest for tests.api.test_users.test_users_parametrizados Coverage Results" MODIFIED="1755213519834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_in_test_web_form_py.coverage" NAME="pytest in test_web_form.py Coverage Results" MODIFIED="1755225147348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_in_test_users_endpoints_py.coverage" NAME="pytest in test_users_endpoints.py Coverage Results" MODIFIED="1755229784952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/qa_python_miniframework$pytest_in_test_users_endpoints_py.coverage" NAME="pytest in test_users_endpoints.py Coverage Results" MODIFIED="1755229845732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
