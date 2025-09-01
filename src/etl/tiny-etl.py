@@ -24,17 +24,17 @@ try:
         if count > 0:
             results.append({"Validation": f"Nulls in {col}", "Count": count})
 
-    # Monto no numérico
+    # No numeric amount
     bad_amount = pd.to_numeric(df['MontoTotal'], errors='coerce').isna().sum()
     if bad_amount > 0:
         results.append({"Validation": "Invalid numeric in MontoTotal", "Count": bad_amount})
 
-    # Fechas inválidas
+    #Invalid datetimes
     bad_dates = pd.to_datetime(df['FechaPedido'], errors='coerce').isna().sum()
     if bad_dates > 0:
         results.append({"Validation": "Invalid date in FechaPedido", "Count": bad_dates})
 
-    # 4) Exportar resultados
+    # 4) Export results
     results_df = pd.DataFrame(results)
     results_df.to_excel("Data_Validation_Report.xlsx", index=False)
 
