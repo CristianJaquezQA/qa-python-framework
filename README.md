@@ -1,66 +1,70 @@
 # 🐍 QA Python Mini Framework  
 
-Este proyecto es un **mini-framework de QA en Python** diseñado para mostrar cómo integrar pruebas de **API, UI y procesos ETL** en un mismo ecosistema. Es ideal como punto de partida para aprender y demostrar habilidades en **automatización de pruebas** y **pipelines de datos**.  
+This project is a **QA mini-framework in Python** designed to demonstrate how to integrate **API, UI, and ETL processes** within the same ecosystem. It’s an ideal starting point for learning and showcasing skills in **test automation** and **data pipelines**.  
 
 ---
 
-## 🚀 Características principales
-- **API Testing** → cliente HTTP modular con `pytest`.  
-- **UI Testing** → automatización de formularios y búsqueda en Google usando **Selenium WebDriver**.  
-- **ETL (Extract, Transform, Load)** → ejemplos prácticos de extracción, transformación y carga de datos.  
-- **Configuración centralizada** con `config.py`.  
-- **Estructura escalable** → organizada en módulos (`api/`, `etl/`, `ui/`).  
+## 🚀 Key Features
+- **API Testing** → modular HTTP client with `pytest`.  
+- **UI Testing** → form automation and Google search using **Selenium WebDriver**.  
+- **ETL (Extract, Transform, Load)** → practical examples of data extraction, transformation, and loading.  
+- **Centralized configuration** with `config.py`.  
+- **Scalable structure** → organized into modules (`api/`, `etl/`, `ui/`).  
 
 ---
 
-## 📂 Estructura del proyecto
+## 📂 Project Structure
+
+---
+
 ```
 qa-python-miniframework/
 │── src/
-│   ├── api/              # Cliente API y métodos HTTP
-│   ├── core/             # Configuración y esquemas
-│   ├── etl/              # Scripts ETL de ejemplo
-│   └── ui/               # Pruebas UI con Selenium
+│ ├── api/ # API client and HTTP methods
+│ ├── core/ # Configuration and schemas
+│ ├── etl/ # Sample ETL scripts
+│ └── ui/ # UI tests with Selenium
 │
 │── tests/
-│   ├── api/              # Pruebas API con pytest
-│   └── ui/               # Pruebas UI con pytest + Selenium
+│ ├── api/ # API tests with pytest
+│ └── ui/ # UI tests with pytest + Selenium
 │
-│── requirements.txt      # Dependencias del proyecto
-│── pytest.ini            # Configuración de pytest
+│── requirements.txt # Project dependencies
+│── pytest.ini # Pytest configuration
 ```
 
 ---
 
-## ⚙️ Instalación
-1. Clonar el repositorio:
+## ⚙️ Installation
+1. Clone the repository:
    ```bash
-   git clone https://github.com/tuusuario/qa-python-miniframework.git
+   git clone https://github.com/youruser/qa-python-miniframework.git
    cd qa-python-miniframework
+
    ```
 
-2. Crear y activar un entorno virtual:
+2. Create and activate a virtual environment:
    ```bash
    python -m venv .venv
    source .venv/bin/activate   # Linux / Mac
    .venv\Scripts\activate      # Windows
    ```
 
-3. Instalar dependencias:
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
 ---
 
-## ▶️ Ejecución de pruebas
+## ▶️ Running Tests
 
-### 1. Pruebas de API
+### 1. API Tests
 ```bash
 pytest tests/api -v
 ```
 
-### 2. Pruebas de UI (Selenium)
+### 2. UI Tests (Selenium)
 ```bash
 pytest tests/ui -v
 ```
@@ -94,10 +98,10 @@ def test_google_search(driver):
 
 ---
 
-## 📌 Extender el framework
-- **Nuevos endpoints API** → agregar funciones en `src/api/client.py`.  
-- **Nuevos ETL pipelines** → crear scripts en `src/etl/`.  
-- **Nuevas pruebas UI** → añadir en `tests/ui/` usando Selenium.  
+## 📌 Extending the Framework
+- **New API endpoints → add functions in src/api/client.py.
+- **New ETL pipelines → create scripts in src/etl/.
+- **New UI tests → add them in tests/ui/ using Selenium.
 
 ---
 
