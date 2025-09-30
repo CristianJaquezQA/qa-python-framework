@@ -77,7 +77,7 @@ python src/etl/tiny-etl.py
 
 ---
 
-## 🧩 Ejemplo de uso
+## 🧩 Usage Example
 
 ### API Test
 ```python
