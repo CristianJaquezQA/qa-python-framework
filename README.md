@@ -1,4 +1,4 @@
-# 🐍 QA Python Mini Framework  
+# 🐍 QA Python Framework  
 
 This project is a **QA mini-framework in Python** designed to demonstrate how to integrate **API, UI, and ETL processes** within the same ecosystem. It’s an ideal starting point for learning and showcasing skills in **test automation** and **data pipelines**.  
 
