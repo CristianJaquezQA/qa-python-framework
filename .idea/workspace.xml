@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="67795974-d592-44cc-8333-f62e827b322e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/etl/tiny-etl.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etl/tiny-etl.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +149,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PY-252.23892.439" />
         <option value="bundled-python-sdk-b3ae9b5d7125-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.439" />
       </set>
     </attachedChunks>
@@ -164,7 +161,8 @@
       <option name="presentableId" value="Default" />
       <updated>1755196278111</updated>
       <workItem from="1755196279996" duration="19377000" />
-      <workItem from="1756754377424" duration="456000" />
+      <workItem from="1756754377424" duration="3925000" />
+      <workItem from="1761162220762" duration="4000" />
     </task>
     <servers />
   </component>
