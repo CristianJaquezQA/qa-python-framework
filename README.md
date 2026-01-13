@@ -95,14 +95,14 @@ def test_google_search(driver):
     search_box.submit()
     assert "QA Automation" in driver.title
 ```
-###🧠 Key Learnings
+🧠 Key Learnings
 ```
 - Structuring a Python QA project with multiple testing layers
 - Combining API, UI, and data testing within a single framework
 - Validating ETL processes beyond simple execution
 - Reinforcing pytest usage, modularization, and test organization
 ```
-###🚧 Roadmap
+🚧 Roadmap
 ```
 - Convert ETL validations into pytest-based data quality tests
 - Add CI pipeline (GitHub Actions)
@@ -114,9 +114,9 @@ def test_google_search(driver):
 ---
 
 ## 📌 Extending the Framework
-- **New API endpoints → add functions in src/api/client.py.
-- **New ETL pipelines → create scripts in src/etl/.
-- **New UI tests → add them in tests/ui/ using Selenium.
+- New API endpoints → add functions in src/api/client.py.
+- New ETL pipelines → create scripts in src/etl/.
+- New UI tests → add them in tests/ui/ using Selenium.
 
 ---
 👤 Author
