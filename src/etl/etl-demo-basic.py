@@ -1,7 +1,7 @@
 import pyodbc
 import pandas as pd
 
-#Connection configuration
+# Connection configuration
 conn_str = (
     "DRIVER={ODBC Driver 17 for SQL Server};"
     "SERVER=localhost\\SQLEXPRESS;"
