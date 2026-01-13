@@ -18,7 +18,7 @@ This project is a **QA framework in Python** designed to demonstrate how to inte
 ---
 
 ```
-qa-python-miniframework/
+qa-python-framework/
 │── src/
 │ ├── api/ # API client and HTTP methods
 │ ├── core/ # Configuration and schemas
