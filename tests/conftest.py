@@ -2,16 +2,19 @@ import pytest
 from src.api.client import APIClient
 from src.ui.driver import build_driver
 
+
 @pytest.fixture(scope="session")
 def api():
-    # Cliente API de práctica (JSONPlaceholder)
+    # Practice API client (JSONPlaceholder)
     return APIClient()
+
 
 @pytest.fixture
 def driver():
-    # Crea y cierra el navegador por cada test de UI
+    # Create and close the browser for each UI test
     d = build_driver()
     try:
         yield d
     finally:
         d.quit()
+

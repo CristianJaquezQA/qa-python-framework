@@ -12,11 +12,11 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.exc import SQLAlchemyError
 from src.core.config import env
 
-# ---- Logger ----
+# Logger
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 log = logging.getLogger("etl-lite")
 
-# ---- Config (puede leer de .env o valores por defecto)
+# Config (can read from .env or use default values)
 db_driver = env("DB_DRIVER")
 db_server = env("DB_SERVER", r"localhost\SQLEXPRESS")
 db_database = env("DB_DATABASE", "PracticaSQL")
@@ -24,8 +24,9 @@ encrypt = env("DB_ENCRYPT", "no")
 trust_cert = env("DB_TRUST_CERT", "yes")
 trusted = str(env("DB_TRUSTED_CONNECTION", "true")).lower() in ("1", "true", "yes")
 
+
 def make_engine():
-    """Crea el engine de conexión a SQL Server."""
+    """Create a SQL Server connection engine."""
     parts = [
         f"DRIVER={{{db_driver}}}",
         f"SERVER={db_server}",
@@ -38,8 +39,9 @@ def make_engine():
     odbc_enc = urllib.parse.quote_plus(odbc_str)
     return create_engine(f"mssql+pyodbc:///?odbc_connect={odbc_enc}")
 
+
 def validate_basic(df: pd.DataFrame) -> list[str]:
-    """Validación simple de columnas requeridas y datos vacíos."""
+    """Simple validation for required columns and empty data."""
     issues = []
     required = {"Nombre"}
     if df.empty:
@@ -49,19 +51,23 @@ def validate_basic(df: pd.DataFrame) -> list[str]:
         issues.append(f"Missing columns: {sorted(missing)}")
     return issues
 
+
 def run(outdir="outputs", write_excel=True):
-    """Ejecuta el ETL: lee DB, valida y exporta CSV/Excel."""
+    """Run the ETL: read from DB, validate data, and export to CSV/Excel."""
     try:
         log.info("Connecting to DB...")
         eng = make_engine()
-        df = pd.read_sql(text("SELECT Nombre FROM Empleados WHERE Departamento = 'Ventas' ;"), eng)
+        df = pd.read_sql(
+            text("SELECT Nombre FROM Empleados WHERE Departamento = 'Ventas' ;"),
+            eng
+        )
         log.info("Rows fetched: %s", len(df))
 
         log.info("Validating...")
         issues = validate_basic(df)
         if issues:
             for e in issues:
-                log.error("Validation: %s", e)
+                log.error("Validation issue: %s", e)
             sys.exit(1)
 
         os.makedirs(outdir, exist_ok=True)
@@ -77,12 +83,14 @@ def run(outdir="outputs", write_excel=True):
                     df.to_excel(w, sheet_name="Empleados", index=False)
                 log.info("Wrote Excel -> %s", xlsx_path)
             except ModuleNotFoundError:
-                log.warning("openpyxl not installed; skipped Excel export")
+                log.warning("openpyxl not installed; Excel export skipped")
 
-        log.info("ETL Done.")
+        log.info("ETL completed successfully.")
     except (SQLAlchemyError, OSError) as ex:
         log.exception("ETL failed: %s", ex)
         sys.exit(1)
 
+
 if __name__ == "__main__":
     run()
+

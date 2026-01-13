@@ -16,10 +16,10 @@ def test_web_form_submit(driver):
     dropdown = Select(wait.until(EC.element_to_be_clickable((By.NAME, "my-select"))))
     dropdown.select_by_visible_text("Two")
 
-    # Click en botón
+    # Click on button
     btn = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button")))
     btn.click()
 
-    # Verificamos el mensaje
+    # Verify the message
     msg = wait.until(EC.visibility_of_element_located((By.ID, "message")))
     assert "Received!" in msg.text
