@@ -6,7 +6,7 @@ def test_get_user_1(api):
     assert r.status_code == 200
     body = r.json()
     assert body["id"] == 1
-    assert body["name"]  # no vacío
+    assert body["name"]  # no empty
 
 @pytest.mark.api
 @pytest.mark.parametrize("uid", [1, 2, 3])

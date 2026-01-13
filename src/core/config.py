@@ -1,19 +1,20 @@
 # src/core/config.py
 """
-Helper para leer variables de entorno con soporte de:
-- .env (usando python-dotenv)
-- valores por defecto
-- variables requeridas
-- casting (incluye bool)
+Helper to read environment variables with support for:
+- .env files (using python-dotenv)
+- default values
+- required variables
+- type casting (including bool)
 
-Uso:
+Usage:
     from src.core.config import env
 
-    driver = env("DB_DRIVER")                       # string (requerida si no das default)
+    driver = env("DB_DRIVER")                       # string (required if no default is provided)
     server = env("DB_SERVER", r"localhost\\SQLEXPRESS")
     trusted = env("DB_TRUSTED_CONNECTION", "true")  # string
     trusted_bool = env("DB_TRUSTED_CONNECTION", False, cast=bool)  # bool
 """
+
 
 import os
 from typing import Any, Callable, Optional

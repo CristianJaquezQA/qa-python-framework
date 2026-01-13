@@ -2,9 +2,10 @@ import requests
 
 class APIClient:
     """
-    Cliente HTTP sencillo para practicar. Usaremos JSONPlaceholder,
-    que es un API pública de prueba.
+    Simple HTTP client for practice purposes. We will use JSONPlaceholder,
+    which is a public API for testing and experimentation.
     """
+
     def __init__(self, base_url: str = "https://jsonplaceholder.typicode.com", timeout: float = 5.0):
         self.base_url = base_url.rstrip("/")
         self.timeout = timeout
