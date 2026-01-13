@@ -1,6 +1,6 @@
 # 🐍 QA Python Framework  
 
-This project is a **QA mini-framework in Python** designed to demonstrate how to integrate **API, UI, and ETL processes** within the same ecosystem. It’s an ideal starting point for learning and showcasing skills in **test automation** and **data pipelines**.  
+This project is a **QA framework in Python** designed to demonstrate how to integrate **API, UI, and ETL processes** within the same ecosystem. It’s an ideal starting point for learning and showcasing skills in **test automation** and **data pipelines**.  
 
 ---
 
@@ -38,8 +38,8 @@ qa-python-miniframework/
 ## ⚙️ Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/youruser/qa-python-miniframework.git
-   cd qa-python-miniframework
+   git clone https://github.com/CristianJaquezQA/qa-python-framework.git
+   cd qa-python-framework
 
    ```
 
@@ -95,6 +95,21 @@ def test_google_search(driver):
     search_box.submit()
     assert "QA Automation" in driver.title
 ```
+###🧠 Key Learnings
+```
+- Structuring a Python QA project with multiple testing layers
+- Combining API, UI, and data testing within a single framework
+- Validating ETL processes beyond simple execution
+- Reinforcing pytest usage, modularization, and test organization
+```
+###🚧 Roadmap
+```
+- Convert ETL validations into pytest-based data quality tests
+- Add CI pipeline (GitHub Actions)
+- Add reporting (HTML / Allure)
+- Add linting and formatting (ruff, black)
+- Add statis typing with mypy
+```
 
 ---
 
@@ -104,6 +119,7 @@ def test_google_search(driver):
 - **New UI tests → add them in tests/ui/ using Selenium.
 
 ---
+👤 Author
 
-## 🙌 Autor
-Proyecto desarrollado por **Cristian Jáquez** como demostración de habilidades en **QA Automation, Python y ETL pipelines**.  
+Cristian Jaquez
+QA Automation Engineer 
